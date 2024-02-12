@@ -25,4 +25,8 @@ public class Funcionario {
     public Double getSalario() {
         return salario;
     }
+
+    public double calculaSalario() {
+        return getCargo().getRegra().calculaSalario(this);
+    }
 }
