@@ -1,6 +1,6 @@
 package services;
 
-public class TabelaDePrecoPadrao {
+public class TabelaDePrecoPadrao implements TabelaDePreco {
 
     public double descontoPara(double valor) {
         if (valor <= 1000) {

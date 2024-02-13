@@ -1,6 +1,6 @@
 package services;
 
-public class TabelaDePrecoDiamond {
+public class TabelaDePrecoDiamond implements TabelaDePreco {
 
     public double descontoPara(double valor) {
         if (valor <= 1000) {

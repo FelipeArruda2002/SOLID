@@ -1,6 +1,6 @@
 package services;
 
-public class FreteCorreios {
+public class FreteCorreios implements Frete {
 
     public double para(String cidade) {
         if ("SÃO PAULO".equals(cidade.toUpperCase())) {
