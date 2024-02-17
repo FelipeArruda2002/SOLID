@@ -1,14 +1,14 @@
 package service;
 
-import model.Conta;
+import model.ContaParaSaque;
 
 import java.math.BigDecimal;
 
 public class ServicoBancarioSaque {
 
-    private Conta conta;
+    private ContaParaSaque conta;
 
-    public ServicoBancarioSaque(Conta conta) {
+    public ServicoBancarioSaque(ContaParaSaque conta) {
         this.conta = conta;
     }
 

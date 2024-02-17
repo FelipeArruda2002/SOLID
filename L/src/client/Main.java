@@ -17,9 +17,12 @@ public class Main {
         servico = new ServicoBancarioSaque(new ContaPoupanca());
         servico.sacar(new BigDecimal(500));
 
+        /**
+         * Com o serviço bancário de saque recebendo somente contas
+         * que realizam saque, ele pode confiar em seus subtipos.
+         */
 
-        // Violando o principio de substituição de Liskov
-        servico = new ServicoBancarioSaque(new ContaDepositoPrazoFixo());
-        servico.sacar(new BigDecimal(540));
+        ContaDepositoPrazoFixo contaDeposito = new ContaDepositoPrazoFixo();
+        contaDeposito.depositar(new BigDecimal(450));
     }
 }

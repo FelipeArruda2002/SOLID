@@ -2,7 +2,7 @@ package model;
 
 import java.math.BigDecimal;
 
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca extends ContaParaSaque {
 
     @Override
     public void depositar(BigDecimal valor) {
