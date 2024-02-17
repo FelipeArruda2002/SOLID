@@ -1,4 +1,4 @@
-public class CristianoRonaldo implements  JogadorCompleto{
+public class CristianoRonaldo implements JogadorDestro, JogadorCanhoto, Cabeceador, BatedorDeFalta, BatedorDePenalti {
 
     @Override
     public void chutarDeEsquerda() {
