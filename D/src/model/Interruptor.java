@@ -3,19 +3,15 @@ package model;
 public class Interruptor {
 
     /**
-     * No principio de inversão de dependência diz que
-     * devemos depender de abstrações e não de implementações.
-     * Nesse exemplo a classe Interruptor fica "Refém" da classe Lampada
-     * sendo que qualquer alteração na classe Lampada pode alterar o comportamneto
-     * da classe Interruptor
+     * Dessa forma a classe Interruptor depende de uma interface
      */
-    private Lampada lampada;
+    private Dispositivo dispositivo;
 
-    public Interruptor(Lampada lampada) {
-        this.lampada = lampada;
+    public Interruptor(Dispositivo dispositivo) {
+        this.dispositivo = dispositivo;
     }
 
     public void acionar() {
-        lampada.acionar();
+        dispositivo.acionar();
     }
 }
